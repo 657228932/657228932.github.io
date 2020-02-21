@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>准系统蓝天clevo N857HP6 黑苹果</title>
+      <link href="/kp7gs.html"/>
+      <url>/kp7gs.html</url>
+      
+        <content type="html"><![CDATA[<hr><h1>神舟笔记本z7-kp7gs黑苹果</h1><h2 id="电脑配置"><a class="header-anchor" href="#电脑配置">¶</a>电脑配置</h2><table><thead><tr><th>规格</th><th>详细信息</th></tr></thead><tbody><tr><td>电脑型号</td><td>神舟战神笔记本电脑z7-kp7gs(模具为蓝天clevo N857HP6)</td></tr><tr><td>处理器</td><td>英特尔 酷睿 i7-7700hq 处理器</td></tr><tr><td>内存</td><td>16GB 镁光 DDR4 2400MHz</td></tr><tr><td>硬盘</td><td>镁光 NVMe固态硬盘 512GB+ 西部数据 sata3 绿盘 1T</td></tr><tr><td>集成显卡</td><td>英特尔 HD 630</td></tr><tr><td>独立显卡</td><td>英伟达 GTX 1060 6GB</td></tr><tr><td>显示器</td><td>京东方 NV156FHM-N61 FHD 1920x1080 (15.6 英寸)</td></tr><tr><td>声卡</td><td>瑞昱 ALC269 (节点:18)</td></tr><tr><td>无线网卡</td><td>英特尔 无线 3160AC</td></tr><tr><td>有线网卡</td><td>Realtek RTL8168/8111 PCI-E Gigabit Ethernet Adapter PCI</td></tr><tr><td>读卡器</td><td>瑞昱 RTS5129/RTS5250S</td></tr></tbody></table><h2 id="Clover版本的目前情况"><a class="header-anchor" href="#Clover版本的目前情况">¶</a>Clover版本的目前情况</h2><ul><li><p><b>无线网卡在macOS 10.15下无法工作，需要更换1820A</b></p></li><li><p>独立显卡无法工作，因为macOS不支持Optimus技术</p><ul><li>使用了 <a href="https://github.com/daliansky/XiaoMi-Pro-Hackintosh/blob/master/EFI/CLOVER/ACPI/patched/SSDT-DDGPU.dsl" target="_blank" rel="noopener">SSDT-DDGPU</a> 来禁用它以节省电量</li></ul></li><li><p>[x] 显卡(HD630)正常，笔记本无法驱动独显</p></li><li><p>[x] 网卡正常</p></li><li><p>[x] 无线网卡使用<code>BCM94356ZAE</code>（DW1820A），能正常使用蓝牙、WiFi</p></li><li><p>[x] handoff airdrop</p></li><li><p>[x] USB3.0正常</p></li><li><p>[x] 随航正常</p></li><li><p>[x] 亮度调节正常</p></li><li><p>[x] 睡眠正常</p></li><li><p>[x] 声卡alc269（ALC269驱动成功，id=18）</p></li><li><p>[x] 键盘小键盘正常使用</p></li><li><p>[x] ps/2触摸板</p></li><li><p>[x] 外接显示器hdmi接口不可用，可通过usb转hdmi</p></li></ul><h2 id="OpenCore版本的目前情况"><a class="header-anchor" href="#OpenCore版本的目前情况">¶</a>OpenCore版本的目前情况</h2><p>-未使用<br>需要更多测试。。。后期应该会使用</p><h2 id="效果展示"><a class="header-anchor" href="#效果展示">¶</a>效果展示</h2><p><img src="/kp7gs/1.png" alt="Image"></p><p><img src="/kp7gs/2.png" alt="Image"></p><p><img src="/kp7gs/3.png" alt="Image"></p><p><img src="/kp7gs/4.png" alt="Image"></p><p><img src="/kp7gs/5.png" alt="Image"></p><p><img src="/kp7gs/7.png" alt="Image"></p><p><img src="/kp7gs/8.png" alt="Image"></p><h1>下载地址：</h1><p><a href="https://github.com/657228932/hackintosh" target="_blank" rel="noopener">https://github.com/657228932/hackintosh</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hackintosh </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 黑苹果 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Acid burn</title>
+      <link href="/cm1.html"/>
+      <url>/cm1.html</url>
+      
+        <content type="html"><![CDATA[<p>这是学习的第一个CM程序</p><p><img src="/cm1/1.jpg" alt="xxx"></p><p>打开软件发现有两个可以注册的地方</p><ul><li>serial/name</li><li>serial</li></ul><p>所以需要找到出两个破解点  先选择第一个</p><p><img src="/cm1/2.jpg" alt="xxx"></p><h1>首先拖入OD</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tips：用于学习的软件都不存在壳 除非有说明</span><br></pre></td></tr></table></figure><p>直接右键中文搜索引擎查询<br><img src="/cm1/4.jpg" alt="xxx"><br>选择搜索ASCll<br>然后CTRL+f</p><blockquote><p>常见的快捷键选择查看上一篇文章</p></blockquote><p><font face="黑体" color="red">Congratz!</font></p><p>在ASCll发现有两个Congratz! 双击选择其中一个都行，会发现<br>在这个Congratz!上面有个jnz 跳转了这个指令 右键选择二进制选择用nop填充</p><p><img src="/cm1/6.jpg" alt="xxx"></p><hr><p>然后再次右键中文搜索引擎查询<br>选择搜索ASCll 选择另一个Congratz!<br>在附近也可以找到一个jnz 只需要用nop填充就行了</p><p><strong>然后在填充的nop这行右键选择复制到可执行文件选择所有修改</strong></p><p><img src="/cm1/7.jpg" alt="xxx"></p><p>在小窗口右键保存文件就可以了</p><p><img src="/cm1/8.jpg" alt="xxx"></p><hr><h1>这个地方有两个坑一定要注意</h1><p>*<font face="黑体" color="red" size="5"> 一定要在修改的地方的右键选择复制到可执行文件，不然会出现未修改的情况<br><img src="/cm1/9.jpg" alt="xxx"></font></p><p>*<font face="黑体" color="red" size="5">当有多个修改地方的时候一定要在右键复制到可执行文件里面选择所有修改，不然会只会保存当前修改的的地方 不保存之前的任何操作，例如本cm中有两个地方需要nop 所有需要选择所有修改 才能保证一次完成</font></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> CM学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 入门160个CM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OD前言</title>
+      <link href="/useod.html"/>
+      <url>/useod.html</url>
+      
+        <content type="html"><![CDATA[<p>由于这篇文章是[CreackMe练习]系列的前言 只会简单的说OD是怎么用的，差不多就是怎么找字符串，怎么设断点，常用快捷键，其他用到的，会在文章里面再提，</p><p><strong>所用工具是吾爱的修改版</strong></p><p>OllyDbg文件夹里面有个路径修复，先运行这个</p><p>要说下的是，OD的临时文件存在UDD目录，如果调试了某个软件，调试了一半，下次打开UDD目录里面是有你上次调试的断点和修改记录的，如果删了就没了</p><h1>首先打开OD后 看到的界面应是这样</h1><p><img src="/useod/1.jpg" alt="xxx"></p><p>如上图所示几个部分：</p><ul><li><p>反汇编窗口：显示被调试程序的反汇编代码，标题栏上的地址、HEX 数据、反汇编、注释可以通过在窗口中右击出现的菜单 界面选项-&gt;隐藏标题 或 显示标题 来进行切换是否显示。用鼠标左键点击注释标签可以切换注释显示的方式。</p></li><li><p>寄存器窗口：显示当前所选线程的 CPU 寄存器内容。同样点击标签 寄存器 (FPU) 可以切换显示寄存器的方式。</p></li><li><p>信息窗口：显示反汇编窗口中选中的第一个命令的参数及一些跳转目标地址、字串等。</p></li><li><p>数据窗口：显示内存或文件的内容。右键菜单可用于切换显示方式。</p></li><li><p>堆栈窗口：显示当前线程的堆栈。</p></li><li><p>菜单窗口：顾名思义，一些命令以及操作、显示等都在这里。</p></li><li><p>命令行窗口：用来下断点等相关命令。</p></li></ul><p>除了直接启动 OllyDBG 来调试外，我们还可以把 OllyDBG 添加到资源管理器右键菜单，这样我们就可以直接在 .exe 及 .dll 文件上点右键选择“用Ollydbg打开”菜单来进行调试。要把 OllyDBG 添加到资源管理器右键菜单，只需点菜单 选项-&gt;添加到浏览器，将会出现一个对话框，先点击“添加 Ollydbg 到系统资源管理器菜单”，再点击“完成”按钮即可。要从右键菜单中删除也很简单，还是这个对话框，点击“从系统资源管理器菜单删除 Ollydbg”，再点击“完成”就行了。</p><p>OllyDBG 支持插件功能，插件的安装也很简单，只要把下载的插件（一般是个 DLL 文件）复制到 OllyDBG 安装目录下的 PLUGIN 目录中就可以了，OllyDBG 启动时会自动识别。要注意的是 OllyDBG 1.10 对插件的个数有限制，最多不能超过 32 个，否则会出错。建议插件不要添加的太多。</p><p>到这里基本配置就完成了，OllyDBG 把所有配置都放在安装目录下的 ollydbg.ini 文件中。</p><h1>调试方法</h1><p>od调试方法一般有2种：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.直接文件–打开（F3），进行调试</span><br><span class="line">2.文件-附加 ，进行调试，附加必须是已经运行的程序才可以。</span><br><span class="line">调试后会出现如图所示：</span><br></pre></td></tr></table></figure><p>调试中我们经常要用到的快捷键有这些：</p><p><font face="黑体" color="red">  F2：设置断点，只要在光标定位的位置（上图中灰色条）按F2键即可，再按一次F2键则会删除断点。（相当于 SoftICE 中的 F9）</font></p><p><font face="黑体" color="red">F8：单步步过。每按一次这个键执行一条反汇编窗口中的一条指令，遇到 CALL 等子程序不进入其代码。（相当于 SoftICE 中的 F10）</font></p><p><font face="黑体" color="red">F7：单步步入。功能同单步步过(F8)类似，区别是遇到 CALL 等子程序时会进入其中，进入后首先会停留在子程序的第一条指令上。（相当于 SoftICE 中的 F8）</font></p><p><font face="黑体" color="red">F4：运行到选定位置。作用就是直接运行到光标所在位置处暂停。（相当于 SoftICE 中的 F7）</font></p><p><font face="黑体" color="red">F9：运行。按下这个键如果没有设置相应断点的话，被调试的程序将直接开始运行。（相当于 SoftICE 中的 F5）</font></p><p><font face="黑体" color="red">CTR+F9：执行到返回。此命令在执行到一个 ret (返回指令)指令时暂停，常用于从系统领空返回到我们调试的程序领空。（相当于 SoftICE 中的 F12）</font></p><p><font face="黑体" color="red">ALT+F9：执行到用户代码。可用于从系统领空快速返回到我们调试的程序领空。（相当于 SoftICE 中的 F11）</font></p><p>上面提到的几个快捷键对于一般的调试基本上已够用了。要开始调试只需设置好断点，找到你感兴趣的代码段再按 F8 或 F7 键来一条条分析指令功能就可以了。</p><p>通过右键附到OD的方法</p><p>首先打开OD，然后在菜单栏找到 选项 添加到资源管理器右键菜单</p><p><img src="/useod/2.jpg" alt="xxx"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> CM学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 入门160个CM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>血的教训</title>
+      <link href="/sql.html"/>
+      <url>/sql.html</url>
+      
+        <content type="html"><![CDATA[<p>太难受了 网站又一次数据丢失  对Krypt这一次的升级太失望了  本想着把网站放在国外 不会出现什么问题  但是这次服务商升级 把帐号变成什么IoN cloud 会出现删除数据的问题 结果这段时间忙于学习  忽略了发给我的E-mail，然后… 然后就只要删库了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 关于 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据库 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
