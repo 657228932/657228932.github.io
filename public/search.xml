@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>afkayas</title>
+      <link href="/cm2.html"/>
+      <url>/cm2.html</url>
+      
+        <content type="html"><![CDATA[<hr><h1>第二个CM</h1><p><code>Afkayas</code></p><h2 id="首先程序分析："><a class="header-anchor" href="#首先程序分析：">¶</a>首先程序分析：</h2><p>想要破解一个程序，必须先了解这个程序。所以，在破解过程中，对最初程序的分析很重要，他可以帮助我们理解作者的目的和意图，特别是对于注册码的处理细节，从而方便我们反向跟踪和推导。<br>和上一节一样，打开CHM，选择第二个Afkayas，保存下来。运行程序，崩溃，缺少msvbvm50.dll，程序无法运行。没办法，上网上搜索一个，放到程序同一级目录，再次运行，OK。程序界面如下：</p><p><img src="/cm2/1.png" alt="Image"></p><p>这是一个标准的Name/Serial注册码方式， 先随便输入试试：<br>Name: 321321    Serial: 123123</p><p>点击OK，弹出了一个错误对话框，You Get Wrong,Try again!</p><p><img src="/cm2/2.png" alt="Image"></p><h2 id="拖入OD进行分析"><a class="header-anchor" href="#拖入OD进行分析">¶</a>拖入OD进行分析</h2><p>右键选择中文搜索引擎，智能搜索 找到<code>YOU GET Wrong</code>关键词<br>双击选择即可</p><p><img src="/cm2/3.png" alt="Image"></p><h2 id="往上翻可以看到je-short-004025E5跳转信息"><a class="header-anchor" href="#往上翻可以看到je-short-004025E5跳转信息">¶</a>往上翻可以看到<code>je short 004025E5</code>跳转信息</h2><p><img src="/cm2/4.png" alt="Image"></p><h2 id="直接nop填充即可"><a class="header-anchor" href="#直接nop填充即可">¶</a>直接nop填充即可</h2><p><img src="/cm2/5.png" alt="Image"></p><h2 id="右键复制到可执行文件保存就行了"><a class="header-anchor" href="#右键复制到可执行文件保存就行了">¶</a>右键复制到可执行文件保存就行了</h2><p><img src="/cm2/6.png" alt="Image"></p><h2 id="测试效果"><a class="header-anchor" href="#测试效果">¶</a>测试效果</h2><p><img src="/cm2/7.png" alt="Image"></p><hr><p>PS：本文参看<a href="https://www.52pojie.cn/thread-264394-1-1.html" target="_blank" rel="noopener">52pojie</a>某大佬的方法<br>由于计算原因 未进行注册机的学习</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> CM学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 入门160个CM学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>准系统蓝天clevo N857HP6 黑苹果</title>
       <link href="/kp7gs.html"/>
       <url>/kp7gs.html</url>
